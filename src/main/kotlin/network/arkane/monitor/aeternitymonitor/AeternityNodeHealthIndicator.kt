@@ -1,4 +1,4 @@
-package network.arkane.monitor.ethereummonitor
+package network.arkane.monitor.aeternitymonitor
 
 import com.kryptokrauts.aeternity.generated.model.KeyBlock
 import com.kryptokrauts.aeternity.sdk.service.chain.ChainService

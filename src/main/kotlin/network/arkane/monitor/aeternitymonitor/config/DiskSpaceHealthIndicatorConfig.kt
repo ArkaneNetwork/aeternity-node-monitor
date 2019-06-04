@@ -1,4 +1,4 @@
-package network.arkane.monitor.ethereummonitor.config
+package network.arkane.monitor.aeternitymonitor.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.actuate.health.HealthIndicator

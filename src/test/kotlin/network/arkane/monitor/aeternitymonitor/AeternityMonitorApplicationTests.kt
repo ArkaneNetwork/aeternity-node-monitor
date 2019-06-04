@@ -1,4 +1,4 @@
-package network.arkane.monitor.ethereummonitor
+package network.arkane.monitor.aeternitymonitor
 
 import org.junit.Test
 import org.junit.runner.RunWith

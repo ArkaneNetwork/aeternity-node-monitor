@@ -1,4 +1,4 @@
-package network.arkane.monitor.ethereummonitor
+package network.arkane.monitor.aeternitymonitor
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

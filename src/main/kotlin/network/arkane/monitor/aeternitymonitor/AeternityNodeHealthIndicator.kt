@@ -30,7 +30,7 @@ class AeternityNodeHealthIndicator(val chainService: ChainService) : AbstractRea
             val block = latestBlock
             return block
                     .map {
-                        val date = Date(block.get().time.toLong() * 1000)
+                        val date = Date(block.get().time.toLong())
                         val blockTime = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault())
                         if (blockTime.plus(10, ChronoUnit.MINUTES).isBefore(LocalDateTime.now(ZoneId.systemDefault()))) {
                             Mono.just(builder.status(Status.DOWN)

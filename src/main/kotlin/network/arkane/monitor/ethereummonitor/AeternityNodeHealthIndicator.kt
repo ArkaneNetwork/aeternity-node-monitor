@@ -13,7 +13,7 @@ import java.time.temporal.ChronoUnit
 import java.util.*
 
 @Component
-class TronNodeHealthIndicator(val chainService: ChainService) : AbstractReactiveHealthIndicator() {
+class AeternityNodeHealthIndicator(val chainService: ChainService) : AbstractReactiveHealthIndicator() {
 
     private val latestBlock: Optional<KeyBlock>
         get() {

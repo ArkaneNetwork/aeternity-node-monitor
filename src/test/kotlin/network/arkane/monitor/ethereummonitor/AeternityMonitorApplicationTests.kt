@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class EthereummonitorApplicationTests {
+class AeternityMonitorApplicationTests {
 
 	@Test
 	fun contextLoads() {

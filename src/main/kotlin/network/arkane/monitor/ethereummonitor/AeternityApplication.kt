@@ -3,9 +3,9 @@ package network.arkane.monitor.ethereummonitor
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
-class EthereummonitorApplication
+@SpringBootApplication(scanBasePackages = ["network.arkane.monitor","network.arkane.provider"])
+class AeternitymonitorApplication
 
 fun main(args: Array<String>) {
-	runApplication<EthereummonitorApplication>(*args)
+	runApplication<AeternitymonitorApplication>(*args)
 }

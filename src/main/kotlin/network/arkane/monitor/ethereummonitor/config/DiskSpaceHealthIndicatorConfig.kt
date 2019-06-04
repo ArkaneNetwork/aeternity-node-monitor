@@ -5,10 +5,7 @@ import org.springframework.boot.actuate.health.HealthIndicator
 import org.springframework.boot.actuate.system.DiskSpaceHealthIndicator
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.context.annotation.Bean
-import org.springframework.util.unit.DataSize
-import org.springframework.util.unit.DataUnit
 import java.io.File
-import java.lang.IllegalArgumentException
 
 class DiskSpaceHealthIndicatorConfig {
 
@@ -16,7 +13,7 @@ class DiskSpaceHealthIndicatorConfig {
     @Bean
     fun conditionallyProvideDiskspaceHealthIndicator(@Value("\${network.arkane.ethereum.disk.path}") path: String): HealthIndicator {
         if (File(path).exists()) {
-            return DiskSpaceHealthIndicator(File(path), DataSize.of(1, DataUnit.GIGABYTES))
+            return DiskSpaceHealthIndicator(File(path), 1073741824L)
         } else {
             throw IllegalArgumentException("The provided ethereum disk path is not available")
         }
